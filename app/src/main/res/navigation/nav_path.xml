@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_path"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.foodsecurityproject.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" >
+        <action
+            android:id="@+id/to_riceStats"
+            app:destination="@id/riceStats" />
+        <action
+            android:id="@+id/to_waterStats"
+            app:destination="@id/waterStats" />
+        <action
+            android:id="@+id/to_wheatStats"
+            app:destination="@id/wheatStats" />
+    </fragment>
+    <fragment
+        android:id="@+id/riceStats"
+        android:name="com.example.foodsecurityproject.RiceStats"
+        android:label="fragment_rice_stats"
+        tools:layout="@layout/fragment_rice_stats" >
+        <action
+            android:id="@+id/to_ricePriceList"
+            app:destination="@id/ricePriceList" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterStats"
+        android:name="com.example.foodsecurityproject.WaterStats"
+        android:label="fragment_water_stats"
+        tools:layout="@layout/fragment_water_stats" >
+        <action
+            android:id="@+id/to_regionalUse"
+            app:destination="@id/regionalUse" />
+        <action
+            android:id="@+id/to_desalinationPlants"
+            app:destination="@id/desalinationPlants" />
+    </fragment>
+    <fragment
+        android:id="@+id/wheatStats"
+        android:name="com.example.foodsecurityproject.WheatStats"
+        android:label="fragment_wheat_stats"
+        tools:layout="@layout/fragment_wheat_stats" >
+        <action
+            android:id="@+id/to_wheatConsumption"
+            app:destination="@id/wheatConsumption" />
+    </fragment>
+    <fragment
+        android:id="@+id/ricePriceList"
+        android:name="com.example.foodsecurityproject.RicePriceList"
+        android:label="fragment_rice_price_list"
+        tools:layout="@layout/fragment_rice_price_list" />
+    <fragment
+        android:id="@+id/regionalUse"
+        android:name="com.example.foodsecurityproject.RegionalUse"
+        android:label="fragment_regional_use"
+        tools:layout="@layout/fragment_regional_use" />
+    <fragment
+        android:id="@+id/desalinationPlants"
+        android:name="com.example.foodsecurityproject.DesalinationPlants"
+        android:label="fragment_desalination_plants"
+        tools:layout="@layout/fragment_desalination_plants" />
+    <fragment
+        android:id="@+id/wheatConsumption"
+        android:name="com.example.foodsecurityproject.WheatConsumption"
+        android:label="fragment_wheat_consumption"
+        tools:layout="@layout/fragment_wheat_consumption" />
+</navigation>
